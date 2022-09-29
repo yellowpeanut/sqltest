@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 29, 2022 at 01:03 PM
+-- Generation Time: Sep 29, 2022 at 01:25 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.6
 
@@ -1774,6 +1774,16 @@ ALTER TABLE `product`
 ALTER TABLE `storage`
   ADD PRIMARY KEY (`Id`),
   ADD KEY `ProdId` (`ProdId`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `log`
+--
+ALTER TABLE `log`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1501;
 
 --
 -- Constraints for dumped tables
